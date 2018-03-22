@@ -41,10 +41,11 @@ gulp.task('js', function() {
 });
 
 gulp.task('watch', function() {
-    // perform the gulp task 'scss' if any .scss file changes
     gulp.watch('src/scss/**/*.scss', ['scss']);
     gulp.watch('src/js/**/*', ['js']);
-    gulp.watch('src/images/**/*', ['images']);
 });
+
+// build task for netlify
+gulp.task('build', ['scss', 'js']);
 
 gulp.task('default', ['watch']);
