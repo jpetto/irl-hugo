@@ -1,7 +1,7 @@
 ---
 categories: "episodes"
 date: 2017-07-24T07:00:00-07:00
-description: ""
+description: "Have you been hacked, or been the victim of malware or ransomware? Humans make the internet vibrant, but we're also the weakest link — we're predictable and often easily fooled. This episode of IRL focuses on our internet insecurity. Meet the unsung heroes fighting to keep us safe."
 embed: "558fffa7"
 number: 3
 ogdescription: "This episode of IRL focuses on our internet insecurity. Meet the unsung heroes fighting to keep us safe."
