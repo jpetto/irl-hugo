@@ -17,4 +17,10 @@
             <p>{{ .Params.Transcript | markdownify }}</p>
         </div>
     </article>
+
+    {{ if isset .Params "scripts" }}
+        {{ range .Params.scripts }}
+            <script src="/js/{{ index $.Site.Data.js.hash . }}"></script>
+        {{ end }}
+    {{ end }}
 {{ end }}

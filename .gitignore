@@ -1,5 +1,7 @@
 .DS_Store
+TODO.md
 data/
 node_modules/
 public/
-TODO.md
+static/css
+static/js
