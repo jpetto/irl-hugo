@@ -1,3 +1,6 @@
+baseURL = "https://flamboyant-chandrasekhar-589517.netlify.com"
+googleAnalytics = "GTM-5H9T7GF"
+
 [build]
 publish = "public"
 command = "gulp build && hugo"
