@@ -1,9 +1,6 @@
-baseURL = "https://flamboyant-chandrasekhar-589517.netlify.com"
-googleAnalytics = "GTM-5H9T7GF"
-
 [build]
 publish = "public"
-command = "gulp build && hugo"
+command = "gulp build && hugo --config config.toml,config-dev.toml"
 
 [context.production.environment]
 HUGO_VERSION = "0.36.1"
