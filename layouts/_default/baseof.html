@@ -1,8 +1,8 @@
 {{ if and (isset .Params "categories") (eq .Params.categories "episodes") }}
-    {{ $.Scratch.Set "ogImage" (replace (printf "episodes/%s/artwork.png" (string .Params.number)) ".png" "-high-res.png") }}
+    {{ $.Scratch.Set "ogImage" (replace (printf "/images/episodes/%s/artwork.png" (string .Params.number)) ".png" "-high-res.png") }}
     {{ $.Scratch.Set "ogTitle" (printf "IRL Podcast %s" .Params.ogTitle) }}
 {{ else }}
-    {{ $.Scratch.Set "ogImage" "irl-logo-open-graph.png" }}
+    {{ $.Scratch.Set "ogImage" "/images/irl-logo-open-graph.png" }}
 {{ end }}
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@
     
     {{/* TODO: verify og: stuff below */}}
     <meta property="og:url" content="{{ .Permalink }}">
-    <meta property="og:image" content="/images/{{ $.Scratch.Get "ogImage" }}">
+    <meta property="og:image" content="{{ ($.Scratch.Get "ogImage") | absURL }}">
     <meta property="og:title" content="{{ $.Scratch.Get "ogTitle" | default "IRL Podcast" }}">
     <meta property="og:description" content="{{ .Page.Params.ogDescription | default "Veronica Belmont explores real stories of life online – and real talk about how we can all keep the Internet healthy, weird and wonderful. IRL is an original podcast from Mozilla." }}">
 
