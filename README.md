@@ -1,8 +1,9 @@
 ## Running Locally
 
-1. Install Hugo
-2. `hugo serve -wv`
-3. `gulp` in another terminal
+1. Install Hugo: `brew install hugo`
+2. Install dependencies: `npm install`
+2. Start the server: `hugo serve -wv`
+3. Start Gulp for asset compilation (new terminal window): `gulp`
 
 ## Adding new epsidoes
 
