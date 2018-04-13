@@ -3,6 +3,7 @@
 1. Install dependencies: `npm install`
 2. Start Gulp for asset compilation: `gulp`
 3. In a new terminal window, start the server: `docker-compose up`
+4. Open `http://localhost:1313` in a browser
 
 Edit the `.scss` and `.js` files in the `/src` directory (*NOT* in `/static`).
 
