@@ -2,7 +2,9 @@
 
 1. Install dependencies: `npm install`
 2. Start Gulp for asset compilation: `gulp`
-1. In a new terminal window, start the server: `docker-compose up`
+3. In a new terminal window, start the server: `docker-compose up`
+
+Edit the `.scss` and `.js` files in the `/src` directory (*NOT* in `/static`).
 
 ## Adding new epsidoes
 
