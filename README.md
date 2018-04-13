@@ -1,9 +1,8 @@
 ## Running Locally
 
-1. Install Hugo: `brew install hugo`
-2. Install dependencies: `npm install`
-2. Start the server: `hugo serve -wv`
-3. Start Gulp for asset compilation (new terminal window): `gulp`
+1. Install dependencies: `npm install`
+2. Start Gulp for asset compilation: `gulp`
+1. In a new terminal window, start the server: `docker-compose up`
 
 ## Adding new epsidoes
 

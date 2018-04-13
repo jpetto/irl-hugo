@@ -40,7 +40,7 @@ gulp.task('js', function() {
         .pipe(gulp.dest('data/js'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', ['scss', 'js'], function() {
     gulp.watch('src/scss/**/*.scss', ['scss']);
     gulp.watch('src/js/**/*', ['js']);
 });
