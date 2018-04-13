@@ -6,16 +6,15 @@
 
 ## Adding new epsidoes
 
-Simply run:
-
 1. `hugo new episodes/201X-XX-XX-episode-XX-episode-title-here.md`
 
-You can just create this file by hand in the filesystem, but the above command will use the
-`archetypes/episodes.md` template to populate all the necessary front matter.
+You can create this file by hand in the filesystem, but the above command will use the
+`archetypes/episodes.md` template to populate all the necessary front matter, saving
+you precious, precious time.
 
 ## Adding new pages
 
-This probably won't happen often, but if needed, simply run:
+This probably won't happen often, but if needed, run:
 
 1. `hugo new somepage.md`
 

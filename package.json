@@ -1,14 +1,13 @@
 {
-  "name": "irl",
-  "version": "1.0.0",
-  "description": "http://danbahrami.io/articles/building-a-production-website-with-hugo-and-gulp-js/ https://regisphilibert.com/blog/2018/02/hugo-the-scope-the-context-and-the-dot/",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "IRL Podcast",
+  "version": "2.0.0",
+  "description": "IRL: Because Online Life Is Real Life",
+  "repository": {
+    "type": "git",
+    "url": "TBD"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Mozilla",
+  "license": "MPL",
   "devDependencies": {
     "del": "^3.0.0",
     "gulp": "^3.9.1",
