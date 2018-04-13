@@ -1,11 +1,44 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    404!
-</body>
-</html>
+{{ define "main" }}
+    <section id="intro">
+        <div class="content">
+            <div id="intro-main">
+                <div id="site-logo">
+                    <img src="/images/irl-logo.png" srcset="/images/irl-logo-high-res.png 2x" alt="">
+                </div>
+
+                <div id="site-title">
+                    <h1>IRL: Because Online Life Is Real Life</h1>
+                </div>
+
+                <div id="site-intro">
+                    <p>
+                        Host Veronica Belmont shares real stories of life online and
+                        real talk about the future of the Web.
+                    </p>
+
+                    <p>
+                        IRL is an original podcast from Mozilla.
+                    </p>
+                </div>
+
+                <section class="subscribe-links-wrapper">
+                    <h4>Subscribe for free!</h4>
+                    
+                    {{ partial "subscribe-links.html" (dict "subscribeLinksID" "subscribe-links-primary") }}
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <div class="content">
+        <h2>Uh-oh!</h2>
+
+        <p>
+            We can't find the page you're looking for.
+        </p>
+    </div>
+
+    <div class="content">
+        {{ partial "newsletter.html" . }}
+    </div>
+{{ end }}
