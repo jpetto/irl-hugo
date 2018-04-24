@@ -4,7 +4,10 @@
 {{ $.Scratch.Set "rpTracking" (printf "episode%s-modal" (string .Params.number)) }}
 
 <article class="episode" id="episode-{{ .Params.number }}">
-    <div class="episode-image">
+    <div class="episode-image episode-view-single">
+        <img src="/images/{{ .Scratch.Get "imagePath" }}" srcset="/images/{{ .Scratch.Get "imagePathHighRes" }} 2x" alt="">
+    </div>
+    <div class="episode-image episode-view-list">
         <a href="{{ .Permalink }}">
             <img src="/images/{{ .Scratch.Get "imagePath" }}" srcset="/images/{{ .Scratch.Get "imagePathHighRes" }} 2x" alt="">
         </a>
